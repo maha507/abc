@@ -12,6 +12,11 @@ public class AbcApplication {
 		SpringApplication.run(AbcApplication.class, args);	
 
 	}
+
+	@GetMapping("/")
+    public String print() {
+        return "This page is first...";
+    }
 	@GetMapping("/hello")
     public String hello() {
         return "Hello, World!  welcome";
