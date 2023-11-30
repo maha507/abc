@@ -16,5 +16,9 @@ public class AbcApplication {
     public String hello() {
         return "Hello, World!  welcome";
     }
+	@GetMapping("/diplay")
+    public String display() {
+        return "Hello, World!  This is Display page";
+    }
 
 }
